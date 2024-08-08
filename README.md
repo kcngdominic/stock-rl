@@ -17,6 +17,7 @@
   - [ ] toy with different parameter?
 - [ ] Training
   - [ ] Colab -> Azure ML?
+    - [ ] [Tutorial](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-explore-data?view=azureml-api-2)
 - [ ] Deployment
   - [ ] azure pipeline?
   - [ ] azure logic app? so that they are just apis?
