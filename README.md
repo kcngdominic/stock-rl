@@ -5,6 +5,11 @@
 
   - [x] make sure current data available (so this can use the same set of data from training to production)
   - [ ] Prepare training data
+    - [x] Get the first 140 stocks I'm currently following as list of symbols (All australian stocks with market cap at 2B no EOD 2024-08-11. Values stored in stock_list.txt)
+    - [x] Get the data from 1970 for the stocks
+    - [x] Save them into DF using h5py (size is smaller than I thought, only 60MB data)
+- [ ] Investment
+  - [ ] Set up investment account with a broker
 - [ ] RL
   - [ ] make the dataset like RL gym
   - [ ] what are the observation space/ action space?
@@ -15,6 +20,7 @@
   - [ ] experiment
   - [ ] metric: Sharpe ratio? maximising chances of earning over a percentage?
   - [ ] toy with different parameter?
+  - [ ] CNN with y dimension same as the number of features?
 - [ ] Training
   - [ ] Colab -> Azure ML?
     - [ ] [Tutorial](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-explore-data?view=azureml-api-2)
@@ -23,3 +29,5 @@
   - [ ] azure logic app? so that they are just apis?
   - [ ] my db to cache data from yfiance? (rate limit per day)
   - [ ] What app so I can use it easily?
+- [ ] Automation
+  - [ ] Find an API that would allow a background job to trade without manual input (seems like only US stocks are supported)
