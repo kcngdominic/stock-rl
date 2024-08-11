@@ -2,18 +2,19 @@
 
 ## Roadmap
 - [ ] Dataset
-
   - [x] make sure current data available (so this can use the same set of data from training to production)
   - [ ] Prepare training data
     - [x] Get the first 140 stocks I'm currently following as list of symbols (All australian stocks with market cap at 2B no EOD 2024-08-11. Values stored in stock_list.txt)
     - [x] Get the data from 1970 for the stocks
     - [x] Save them into DF using h5py (size is smaller than I thought, only 60MB data)
+    - [ ] Data cleaning, because the starting date of a lot of stock actually aren't as far back to 1980
 - [ ] Investment
   - [ ] Set up investment account with a broker
 - [ ] RL
   - [ ] make the dataset like RL gym
   - [ ] what are the observation space/ action space?
   - [ ] what we need to account for if this is partially observable MDP?
+  - [ ] try different size of x axis of CNN filter
 - [ ] Model
   - [ ] Read from arxiv.org for guidance
     - [ ] [Google serach](https://www.google.com/search?q=stock+price+reinforcement+learning+site%3Aarxiv.org&lr=&sca_esv=32e484f6156eb8e3&sca_upv=1&as_qdr=all&sxsrf=ADLYWIL-hasdETNN_Oz13vRkO_5aJRfppQ%3A1723124007938&ei=J8m0ZvHyOIun2roP0uvuoQc&ved=0ahUKEwixopaTweWHAxWLk1YBHdK1O3QQ4dUDCBA&uact=5&oq=stock+price+reinforcement+learning+site%3Aarxiv.org&gs_lp=Egxnd3Mtd2l6LXNlcnAiMXN0b2NrIHByaWNlIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcgc2l0ZTphcnhpdi5vcmdIpW5QozFYsG1wAXgAkAEAmAGZAqABviuqAQcwLjEwLjE2uAEDyAEA-AEBmAIAoAIAmAMAiAYBkgcAoAeSCQ&sclient=gws-wiz-serp)
